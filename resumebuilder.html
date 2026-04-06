@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ResumeBuilder Pro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .header { background: #f8f9fa; padding: 40px 0; border-bottom: 1px solid #dee2e6; }
+        .input-card { margin-top: -30px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body>
+    <header class="header text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">ResumeBuilder Pro</h1>
+            <p class="text-uppercase tracking-widest text-muted small mb-1">Brought to you by <b><i>Group 1</i></b></p>
+            <p class="lead">Create your professional resume in seconds!</p>
+        </div>
+    </header>
+
+    <main class="container mb-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card input-card border-0">
+                    <div class="card-body p-4">
+                        <form action="http://localhost:8085/process" method="post" enctype="multipart/form-data" target="_blank">
+<!--                        <form action="http://localhost:8085/process" target="_blank"> -->
+
+                            <div class="mb-4">
+                                <label class="form-label fw-bold">Option 1: Upload .txt or .csv</label>
+                                <input class="form-control" type="file" name="file_input" accept=".txt,.csv">
+                            </div>
+
+                            <div class="text-center my-3 text-muted">-- OR --</div>
+
+                            <div class="mb-4">
+                                <label class="form-label fw-bold">Option 2: Paste Content</label>
+                                <textarea class="form-control" name="text_input" rows="8" placeholder="Enter your details here..."></textarea>
+                            </div>
+
+                            <input type="submit" class="btn btn-primary w-100 btn-lg" value="Generate Resume">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+</body>
+</html>
