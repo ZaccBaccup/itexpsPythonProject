@@ -6,22 +6,25 @@ from datetime import date
 
 class JobApplication:
 
-    def __init__(self,CompanyName,JobTitle,AppDay,AppMonth,AppYear,JobLink):
-        self.__CompanyName = CompanyName
-        self.__JobTitle = JobTitle
-        self.__ApplyDate = date(AppYear,AppMonth,AppDay)
-        self.__JobLink = JobLink
+    def __init__(self,companyName,jobTitle,appDay,appMonth,appYear,jobLink):
+        self.__companyName = companyName
+        self.__jobTitle = jobTitle
+        self.__applyDate = date(appYear,appMonth,appDay)
+        self.__jobLink = jobLink
         # self.__AppDay = AppDay
         # self.__AppMonth = AppMonth
         # self.__AppYear = AppYear
 
     def GetApplyDate(self):
-        return self.__ApplyDate
+        return self.__applyDate
     def GetCompanyName(self):
-        return self.__CompanyName
+        return self.__companyName
     
     def GetJobTitle(self):
-        return self.__JobTitle
+        return self.__jobTitle
 
     def GetJobLink(self):
-        return self.__JobLink
+        return self.__jobLink
+    
+    def GetEverything(self):
+        return [self.__companyName, self.__jobTitle, self.__applyDate.day, self.__applyDate.month, self.__applyDate.year, self.__jobLink]
