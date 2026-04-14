@@ -1,0 +1,105 @@
+id,company,role,date,cname,cemail,status,joblink,followedup
+1,Google,Intern,2026-01-01,Mr. Google,mrgoogle123@test123.com,Rejected,https://jobs.com/google-intern,0
+2,Microsoft,Intern,2026-01-01,John Doe,jdoe123@test123.com,Rejected,https://jobs.com/microsoft-intern,1
+3,Tesla,Python Dev,2026-04-05,Nicola,ntesla123@test123.com,Interviewed,https://jobs.com/tesla-python-Dev,1
+4,Meta,Pay Data Analyst,2026-04-08,Meta Llica,abc@test123.com,Applied,https://jobs.com/meta-Pay-data-analyst,0
+5,Google,Python Dev,2026-01-02,Sundar P,sp@google.com,Applied,https://jobs.com/google-python-Dev,0
+6,Google,HRIS Data Analyst,2026-01-02,Sundar P,sp@google.com,Interviewed,https://jobs.com/google-hris-data-analyst,1
+7,Microsoft,Power BI Dev,2026-01-05,Satya N,sn@microsoft.com,Applied,https://jobs.com/microsoft-power-bi-Dev,0
+8,Amazon,Pay Data Analyst,2026-01-07,Andy J,aj@amazon.com,Rejected,https://jobs.com/amazon-Pay-data-analyst,1
+9,Meta,Python Dev,2026-01-10,Mark Z,mz@meta.com,Applied,https://jobs.com/meta-python-Dev,0
+10,JPMorgan Chase,Pay Data Analyst,2026-01-12,Jamie D,jd@jpmorgan.com,Applied,https://jobs.com/jpmorgan-chase-Pay-data-analyst,0
+11,JPMorgan Chase,HRIS Data Analyst,2026-01-12,Jamie D,jd@jpmorgan.com,Applied,https://jobs.com/jpmorgan-chase-hris-data-analyst,1
+12,UnitedHealth,HRIS Data Analyst,2026-01-15,Andrew W,aw@uhg.com,Applied,https://jobs.com/unitedhealth-hris-data-analyst,0
+13,UnitedHealth,Pay Data Analyst,2026-01-15,Andrew W,aw@uhg.com,Applied,https://jobs.com/unitedhealth-Pay-data-analyst,0
+14,CVS Health,Power BI Dev,2026-01-18,Karen L,kl@cvs.com,Applied,https://jobs.com/cvs-health-power-bi-Dev,1
+15,Apple,Python Dev,2026-01-20,Tim C,tc@apple.com,Interviewed,https://jobs.com/apple-python-Dev,1
+16,Walmart,Pay Data Analyst,2026-01-22,Doug M,dm@walmart.com,Applied,https://jobs.com/walmart-Pay-data-analyst,0
+17,Target,HRIS Data Analyst,2026-01-22,Brian C,bc@target.com,Applied,https://jobs.com/target-hris-data-analyst,0
+18,Netflix,Python Dev,2026-01-25,Ted S,ts@netflix.com,Applied,https://jobs.com/netflix-python-Dev,1
+19,Salesforce,Power BI Dev,2026-01-28,Marc B,mb@salesforce.com,Applied,https://jobs.com/salesforce-power-bi-Dev,0
+20,Abbott,HRIS Data Analyst,2026-02-01,Robert F,rf@abbott.com,Applied,https://jobs.com/abbott-hris-data-analyst,1
+21,Baxter,Pay Data Analyst,2026-02-01,Joe A,ja@baxter.com,Applied,https://jobs.com/baxter-Pay-data-analyst,0
+22,State Farm,Power BI Dev,2026-02-05,Michael T,mt@statefarm.com,Applied,https://jobs.com/state-farm-power-bi-Dev,0
+23,Allstate,Python Dev,2026-02-05,Tom W,tw@allstate.com,Applied,https://jobs.com/allstate-python-Dev,1
+24,Walgreens,Pay Data Analyst,2026-02-08,Roz B,rb@walgreens.com,Applied,https://jobs.com/walgreens-Pay-data-analyst,0
+25,McDonalds,HRIS Data Analyst,2026-02-10,Chris K,ck@mcdonalds.com,Applied,https://jobs.com/mcdonalds-hris-data-analyst,1
+26,Boeing,Python Dev,2026-02-12,Dave C,dc@boeing.com,Interviewed,https://jobs.com/boeing-python-Dev,1
+27,Caterpillar,Power BI Dev,2026-02-12,Jim U,ju@cat.com,Applied,https://jobs.com/caterpillar-power-bi-Dev,0
+28,Accenture,Python Dev,2026-02-15,Julie S,js@accenture.com,Applied,https://jobs.com/accenture-python-Dev,0
+29,Deloitte,HRIS Data Analyst,2026-02-15,Joe U,ju@deloitte.com,Applied,https://jobs.com/deloitte-hris-data-analyst,1
+30,IBM,Python Dev,2026-02-18,Arvind K,ak@ibm.com,Applied,https://jobs.com/ibm-python-Dev,0
+31,Oracle,HRIS Data Analyst,2026-02-20,Safra C,sc@oracle.com,Applied,https://jobs.com/oracle-hris-data-analyst,1
+32,Oracle,Pay Data Analyst,2026-02-20,Safra C,sc@oracle.com,Interviewed,https://jobs.com/oracle-Pay-data-analyst,1
+33,General Motors,Power BI Dev,2026-02-22,Mary B,mb@gm.com,Applied,https://jobs.com/general-motors-power-bi-Dev,0
+34,Ford,Python Dev,2026-02-22,Jim F,jf@ford.com,Applied,https://jobs.com/ford-python-Dev,0
+35,United Airlines,Pay Data Analyst,2026-02-25,Scott K,sk@united.com,Applied,https://jobs.com/united-airlines-Pay-data-analyst,1
+36,American Airlines,HRIS Data Analyst,2026-02-25,Robert I,ri@aa.com,Applied,https://jobs.com/american-airlines-hris-data-analyst,0
+37,Discover,Pay Data Analyst,2026-02-28,Roger H,rh@discover.com,Applied,https://jobs.com/discover-Pay-data-analyst,1
+38,Northern Trust,HRIS Data Analyst,2026-02-28,Michael O,mo@ntrs.com,Applied,https://jobs.com/northern-trust-hris-data-analyst,0
+39,Grainger,Power BI Dev,2026-03-02,DG Mac,dg@grainger.com,Applied,https://jobs.com/grainger-power-bi-Dev,0
+40,CDW,Python Dev,2026-03-02,Christine L,cl@cdw.com,Applied,https://jobs.com/cdw-python-Dev,1
+41,Ulta,Pay Data Analyst,2026-03-05,Dave K,dk@ulta.com,Applied,https://jobs.com/ulta-Pay-data-analyst,0
+42,Nike,Python Dev,2026-03-07,John D,jd@nike.com,Applied,https://jobs.com/nike-python-Dev,1
+43,Adidas,Power BI Dev,2026-03-07,Bjorn G,bg@adidas.com,Applied,https://jobs.com/adidas-power-bi-Dev,0
+44,ServiceNow,HRIS Data Analyst,2026-03-10,Bill M,bm@servicenow.com,Applied,https://jobs.com/servicenow-hris-data-analyst,0
+45,Snowflake,Python Dev,2026-03-10,Frank S,fs@snowflake.com,Applied,https://jobs.com/snowflake-python-Dev,1
+46,Workday,HRIS Data Analyst,2026-03-12,Aneel B,ab@workday.com,Interviewed,https://jobs.com/workday-hris-data-analyst,1
+47,Peloton,Python Dev,2026-03-14,Recruiter J,jr@peloton.com,Applied,https://jobs.com/peloton-python-Dev,0
+48,Starbucks,Pay Data Analyst,2026-03-15,Laxman N,ln@starbucks.com,Applied,https://jobs.com/starbucks-Pay-data-analyst,0
+49,Home Depot,Power BI Dev,2026-03-18,Ted D,td@homedepot.com,Applied,https://jobs.com/home-depot-power-bi-Dev,1
+50,Lowes,HRIS Data Analyst,2026-03-18,Marvin E,me@lowes.com,Applied,https://jobs.com/lowes-hris-data-analyst,0
+51,Tesla,Python Dev,2026-03-20,Elon M,em@tesla.com,Applied,https://jobs.com/tesla-python-Dev,1
+52,Tesla,Power BI Dev,2026-03-20,Elon M,em@tesla.com,Applied,https://jobs.com/tesla-power-bi-Dev,0
+53,SpaceX,Python Dev,2026-03-22,Gwynne S,gs@spacex.com,Applied,https://jobs.com/spacex-python-Dev,0
+54,Intuit,Pay Data Analyst,2026-03-22,Sasan G,sg@intuit.com,Applied,https://jobs.com/intuit-Pay-data-analyst,1
+55,Adobe,Power BI Dev,2026-03-25,Shantanu N,sn@adobe.com,Applied,https://jobs.com/adobe-power-bi-Dev,0
+56,Spotify,Python Dev,2026-03-25,Daniel E,de@spotify.com,Applied,https://jobs.com/spotify-python-Dev,1
+57,Uber,Python Dev,2026-03-27,Dara K,dk@uber.com,Applied,https://jobs.com/uber-python-Dev,0
+58,Lyft,Power BI Dev,2026-03-27,David R,dr@lyft.com,Applied,https://jobs.com/lyft-power-bi-Dev,0
+59,Zoom,HRIS Data Analyst,2026-03-29,Eric Y,ey@zoom.us,Applied,https://jobs.com/zoom-hris-data-analyst,1
+60,Slack,Python Dev,2026-03-29,Stewart B,sb@slack.com,Applied,https://jobs.com/slack-python-Dev,0
+61,NVIDIA,Python Dev,2026-03-31,Jensen H,jh@nvidia.com,Interviewed,https://jobs.com/nvidia-python-Dev,1
+62,AMD,Power BI Dev,2026-03-31,Lisa S,ls@amd.com,Applied,https://jobs.com/amd-power-bi-Dev,0
+63,Intel,Pay Data Analyst,2026-04-02,Pat G,pg@intel.com,Applied,https://jobs.com/intel-Pay-data-analyst,0
+64,Visa,Pay Data Analyst,2026-04-02,Al K,ak@visa.com,Applied,https://jobs.com/visa-Pay-data-analyst,1
+65,Mastercard,HRIS Data Analyst,2026-04-02,Michael M,mm@mastercard.com,Applied,https://jobs.com/mastercard-hris-data-analyst,0
+66,Goldman Sachs,Python Dev,2026-04-03,David S,ds@gs.com,Applied,https://jobs.com/goldman-sachs-python-Dev,1
+67,Morgan Stanley,Power BI Dev,2026-04-03,James G,jg@ms.com,Applied,https://jobs.com/morgan-stanley-power-bi-Dev,0
+68,TMobile,Python Dev,2026-04-04,Mike S,ms@tmobile.com,Applied,https://jobs.com/tmobile-python-Dev,0
+69,Verizon,HRIS Data Analyst,2026-04-04,Hans V,hv@verizon.com,Applied,https://jobs.com/verizon-hris-data-analyst,1
+70,ATT,Pay Data Analyst,2026-04-04,John S,js@att.com,Applied,https://jobs.com/att-Pay-data-analyst,0
+71,Disney,Power BI Dev,2026-04-05,Bob C,bc@disney.com,Applied,https://jobs.com/disney-power-bi-Dev,1
+72,PepsiCo,HRIS Data Analyst,2026-04-06,Ramon L,rl@pepsico.com,Applied,https://jobs.com/pepsico-hris-data-analyst,0
+73,CocaCola,Pay Data Analyst,2026-04-06,James Q,jq@coca-cola.com,Applied,https://jobs.com/cocacola-Pay-data-analyst,0
+74,Pfizer,Python Dev,2026-04-07,Albert B,ab@pfizer.com,Applied,https://jobs.com/pfizer-python-Dev,1
+75,Moderna,HRIS Data Analyst,2026-04-07,Stephane B,sb@moderna.com,Applied,https://jobs.com/moderna-hris-data-analyst,0
+76,Chevron,Power BI Dev,2026-04-08,Mike W,mw@chevron.com,Applied,https://jobs.com/chevron-power-bi-Dev,1
+77,ExxonMobil,Python Dev,2026-04-08,Darren W,dw@exxon.com,Applied,https://jobs.com/exxonmobil-python-Dev,0
+78,Square,Python Dev,2026-04-08,Jack D,jd@block.xyz,Applied,https://jobs.com/square-python-Dev,0
+79,PayPal,Pay Data Analyst,2026-04-09,Dan S,ds@paypal.com,Applied,https://jobs.com/paypal-Pay-data-analyst,1
+80,Best Buy,HRIS Data Analyst,2026-04-09,Corie B,cb@bestbuy.com,Applied,https://jobs.com/best-buy-hris-data-analyst,0
+81,Costco,Pay Data Analyst,2026-04-09,Craig J,cj@costco.com,Applied,https://jobs.com/costco-Pay-data-analyst,1
+82,FedEx,Power BI Dev,2026-04-10,Raj S,rs@fedex.com,Applied,https://jobs.com/fedex-power-bi-Dev,0
+83,UPS,HRIS Data Analyst,2026-04-10,Carol T,ct@ups.com,Applied,https://jobs.com/ups-hris-data-analyst,0
+84,Airbnb,Python Dev,2026-04-10,Brian C,bc@airbnb.com,Applied,https://jobs.com/airbnb-python-Dev,1
+85,Expedia,Power BI Dev,2026-04-10,Peter K,pk@expedia.com,Applied,https://jobs.com/expedia-power-bi-Dev,0
+86,Etsy,Pay Data Analyst,2026-04-10,Josh S,js@etsy.com,Applied,https://jobs.com/etsy-Pay-data-analyst,1
+87,Shopify,HRIS Data Analyst,2026-04-10,Tobi L,tl@shopify.com,Applied,https://jobs.com/shopify-hris-data-analyst,0
+88,Reddit,Python Dev,2026-04-10,Steve H,sh@reddit.com,Applied,https://jobs.com/reddit-python-Dev,0
+89,Twitter,Power BI Dev,2026-04-10,Linda Y,ly@x.com,Applied,https://jobs.com/twitter-power-bi-Dev,1
+90,DoorDash,Pay Data Analyst,2026-04-10,Tony X,tx@doordash.com,Applied,https://jobs.com/doordash-Pay-data-analyst,0
+91,Instacart,HRIS Data Analyst,2026-04-10,Fidji S,fs@instacart.com,Applied,https://jobs.com/instacart-hris-data-analyst,1
+92,EA,Python Dev,2026-04-11,Andrew W,aw@ea.com,Applied,https://jobs.com/ea-python-Dev,0
+93,Activision,Power BI Dev,2026-04-11,Bobby K,bk@activision.com,Applied,https://jobs.com/activision-power-bi-Dev,0
+94,Roblox,Python Dev,2026-04-11,David B,db@roblox.com,Applied,https://jobs.com/roblox-python-Dev,1
+95,HubSpot,HRIS Data Analyst,2026-04-11,Yamini R,yr@hubspot.com,Applied,https://jobs.com/hubspot-hris-data-analyst,0
+96,Zillow,Pay Data Analyst,2026-04-11,Rich B,rb@zillow.com,Applied,https://jobs.com/zillow-Pay-data-analyst,1
+97,Redfin,Power BI Dev,2026-04-11,Glenn K,gk@redfin.com,Applied,https://jobs.com/redfin-power-bi-Dev,0
+98,LinkedIn,Python Dev,2026-04-11,Ryan R,rr@linkedin.com,Applied,https://jobs.com/linkedin-python-Dev,0
+99,Discord,HRIS Data Analyst,2026-04-11,Jason C,jc@discord.com,Applied,https://jobs.com/discord-hris-data-analyst,1
+100,Slack,Power BI Dev,2026-04-11,Lidiane J,lj@slack.com,Applied,https://jobs.com/slack-power-bi-Dev,0
+101,Oracle,Python Dev,2026-04-11,Safra C,sc@oracle.com,Applied,https://jobs.com/oracle-python-Dev,1
+102,Microsoft,HRIS Data Analyst,2026-04-11,Satya N,sn@microsoft.com,Applied,https://jobs.com/microsoft-hris-data-analyst,0
+103,Amazon,Python Dev,2026-04-11,Andy J,aj@amazon.com,Applied,https://jobs.com/amazon-python-Dev,0
+104,test32111111,test3,2026-04-13,test3,test3,Rejected,test3,1

@@ -1,0 +1,19 @@
+{% extends "layout.html" %} <!-- template inheritance tag -->
+
+{% block content %} <!-- block tag in Jinja2 (the template engine Flask uses) -->
+<div class="container">
+    <h2 class="mb-4">Application Overview</h2>
+    <h4>Did you apply for a job today? <a href="{{ url_for('jobappadd') }}"><button class="btn btn-primary">Yes</button></a></h4>
+    <table cellpadding="5">
+        <tr>
+            <td><img src="{{ url_for('monthly_apps') }}" class="border rounded shadow chart-img" alt="Applications Over Time"></td>
+            <td><img src="{{ url_for('status_chart') }}" class="border rounded shadow chart-img" alt="Status Chart"></td>
+        </tr>
+        <tr>
+            <td><img src="{{ url_for('role_chart') }}" class="border rounded shadow chart-img" alt="Role Chart"></td>
+            <td><img src="{{ url_for('followup_chart') }}" class="border rounded shadow chart-img" alt="Follow Up Chart"></td>
+        </tr>
+    </table>
+</div>
+
+{% endblock %}

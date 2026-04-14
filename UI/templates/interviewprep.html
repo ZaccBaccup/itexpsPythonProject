@@ -1,0 +1,30 @@
+{% extends "layout.html" %} <!-- template inheritance tag -->
+
+{% block content %} <!-- block tag in Jinja2 (the template engine Flask uses) -->
+<div class="container text-center py-5">
+    <h2 class="mb-5">Practice Interview Questions</h2>
+    <div class="mb-4">
+        <form id="jd-form" action="{{ url_for('interviewprep') }}" method="POST" enctype="multipart/form-data">
+            <div class="mb-3">
+                <input type="file" class="form-control" name="jd_file_input" accept=".txt">
+            </div>
+            <div class="mb-3">
+                <textarea name="jd_text_input" class="form-control" rows="5"
+                    placeholder="Or paste job description here..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">
+                Generate Questions
+            </button>
+        </form>
+    </div>
+
+    {% if questions %} <!-- Display questions here -->
+    <div class="mt-4 text-start">
+        <h4>Generated Questions:</h4>
+        <div class="question-box p-3 border rounded bg-light">{{ questions }}</div>
+    </div>
+    {% endif %}
+
+</div>
+
+{% endblock %}
