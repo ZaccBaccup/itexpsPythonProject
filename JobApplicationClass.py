@@ -13,9 +13,6 @@ class JobApplication:
         self.__applyDate = appDate
         self.__jobLink = jobLink
         self.__isFollowedUp = isFollowedUp
-        # self.__AppDay = AppDay
-        # self.__AppMonth = AppMonth
-        # self.__AppYear = AppYear
 
     def GetApplyDate(self):
         return self.__applyDate

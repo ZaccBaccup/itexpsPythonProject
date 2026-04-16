@@ -1,24 +1,20 @@
 class Resume:
-    name = ""
-    jobTitle = ""
-    location = ""
 
-    highestEdu = []
-    prevJobs = []
     def __init__(self, paramList):
+        self.__name = ""
+        self.__jobTitle = ""
+        self.__location = ""
+        self.__highestEdu = []
+        self.__prevJobs = []
         for curRow in paramList:
             pass
 
 
 
 class PreviousJob:
-    __jobRole = ""
-    __employer = ""
-    __jobStart = -999
-    __jobEnd = ""
-    __jobDuties = [] 
     def __init__(self,initList):
         try:
+            self.__jobDuties = [] 
             print("creating a previousjob instance with", initList)
             print()
             self.__jobRole = initList.pop(0)
@@ -29,6 +25,7 @@ class PreviousJob:
             print("Uh oh! This job application only has", len(initList), "entries when it should have at least 4!")
         for i in initList:
             self.__jobDuties.append(i)
+            print("Adding ", i,"to object",self)
         
     def ReturnAllJobData(self):
         retString = ""
