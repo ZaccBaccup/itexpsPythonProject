@@ -3,6 +3,7 @@ from JobApplicationGet import jobApplicationList
 from JobApplicationClass import JobApplication
 from datetime import datetime
 import matplotlib.pyplot as plt
+from collections import Counter
 
 print(jobApplicationList[0].GetEverything())
 
@@ -22,7 +23,10 @@ with open(csv_file, 'r') as file:
         dates.append(date)
         
         # Convert applications to integer
-        applications.append(int(row['applications']))
+        #applications.append(int(row['applications']))
+        date_count = Counter(dates)
+
+    print (dates)
 
 # Sort data by date (important if CSV isn't ordered)
 sorted_data = sorted(zip(dates, applications))
