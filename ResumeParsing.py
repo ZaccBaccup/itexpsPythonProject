@@ -21,8 +21,10 @@ with open(fileToRead, 'r') as csvfile:
     for curRow in csvreader:
         prevJobList.append(PreviousJob(curRow))
     
-# print()
+myResume = Resume(BasicInfo,eduInfo,prevJobList)
 
-# print("The first job is:",prevJobList[0].ReturnAllJobData())
+myResume.PrintAllJobs()
+
+
 # for i in prevJobList:
 #     i.ReturnAllJobData()
