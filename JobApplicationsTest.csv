@@ -1,16 +1,17 @@
 JobAppID,CompanyName,JobTitle,AppDate(M-D-Y),JobLink,FollowedUp
-1,Make it Magic,Merchant,4-9-2026,N/A,0
-2,Itexps,Instructor,4-8-2026,N/A,0
-3,NPF,analyst,4-7-2026,N/A,0
-4,Itexps,Instructor,4-7-2026,N/A,0
-5,Google,googler,4-6-2026,N/A,0
-6,Amazon,AWS Engineer,4-6-2026,N/A,0
-7,Samsung,phone engineer,4-6-2026,N/A,0
-8,Jackbox,funny man,4-5-2026,N/A,0
-9,Howard and Sons Meat co,butcher,4-5-2026,N/A,0
-10,Nintendo,Lawer,4-5-2026,N/A,0
-11,PepsiCo,flavor snorter,4-5-2026,N/A,0
-12,IDTech,Instructor,4-7-2026,N/A,0
-13,United Airlines,analyst,4-4-2026,N/A,0
-14,Blue Jets AI,analyst,4-8-2026,N/A,0
-15,Microsoft,analyst,4-9-2026,N/A,0
+1,Make it Magic,Merchant,04-09-2026,Not Applicable,0
+2,Itexps,Instructor,04-08-2026,Not Applicable,0
+3,NPF,analyst,04-07-2026,Not Applicable,0
+4,Itexps,Instructor,04-07-2026,Not Applicable,0
+5,Google,googler,04-06-2026,Not Applicable,0
+6,Amazon,AWS Engineer,04-06-2026,Not Applicable,0
+7,Samsung,phone engineer,04-06-2026,Not Applicable,0
+8,Jackbox,funny man,04-05-2026,Not Applicable,0
+9,Howard and Sons Meat co,butcher,04-05-2026,Not Applicable,0
+10,Nintendo,Lawer,04-05-2026,Not Applicable,0
+11,PepsiCo,flavor snorter,04-05-2026,Not Applicable,0
+12,IDTech,Instructor,04-07-2026,Not Applicable,0
+13,United Airlines,analyst,04-04-2026,Not Applicable,0
+14,Blue Jets AI,analyst,04-08-2026,Not Applicable,0
+15,Microsoft,analyst,04-09-2026,Not Applicable,0
+16,Team A-Z,code tester,04-19-2026,Not Applicable,0
