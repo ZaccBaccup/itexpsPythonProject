@@ -1,30 +1,14 @@
-import csv
-from ResumeClass import Resume, PreviousJob
+from ResumeClass import Resume
 
 fileToRead = "TestResume.csv"
 
-BasicInfo = []
-eduInfo = []
-prevJobList = []
+myResume = Resume(fileToRead)
 
-print("Reading from file", fileToRead, "utilizing the csv library...")
-with open(fileToRead, 'r') as csvfile:
-    csvreader = csv.reader(csvfile)  # Reader object
-    next(csvreader) #Ignore first row
-    BasicInfo = next(csvreader)
-    # print("the basic info is",BasicInfo)
-    next(csvreader)
-    eduInfo = next(csvreader)
-    # print("the education info is",eduInfo)
-    next(csvreader)
+print("basic info is", myResume.getBasicInfo())
 
-    for curRow in csvreader:
-        prevJobList.append(PreviousJob(curRow))
-    
-myResume = Resume(BasicInfo,eduInfo,prevJobList)
+print("education info is", myResume.getEduInfo())
 
-myResume.PrintAllJobs()
-
+print("Here is the lsit of jobs I have: ", myResume.getPrevJobs())
 
 # for i in prevJobList:
 #     i.ReturnAllJobData()

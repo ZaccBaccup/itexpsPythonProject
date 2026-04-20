@@ -1,13 +1,55 @@
+import csv
+
+
+
 class Resume:
 
-    def __init__(self, basicInfoList,eduInfoList,prevJobList):
-        self.__name = basicInfoList[0]
-        self.__jobTitle = basicInfoList[1]
-        self.__location = basicInfoList[2]
-        self.__highestEdu = eduInfoList
+    def __init__(self, fileToRead):
+
+        basicInfo = []
+        eduInfo = []
+        prevJobList = []
+
+        print("Reading from file", fileToRead, "utilizing the csv library...")
+        with open(fileToRead, 'r') as csvfile:
+            csvreader = csv.reader(csvfile)  # Reader object
+            next(csvreader) #Ignore first row
+            basicInfo = next(csvreader)
+            # print("the basic info is",BasicInfo)
+            next(csvreader)
+            eduInfo = next(csvreader)
+            # print("the education info is",eduInfo)
+            next(csvreader)
+
+            for curRow in csvreader:
+                prevJobList.append(PreviousJob(curRow))
+
+        self.__name = basicInfo[0]
+        self.__jobTitle = basicInfo[1]
+        self.__location = basicInfo[2]
+        self.__collegeName = eduInfo[0]
+        self.__degreeName = eduInfo[1]
+        self.__collegeStart = eduInfo[2]
+        self.__collegeEnd = eduInfo[3]
         self.__prevJobs = prevJobList
 
+    # return list of strings representing basic information
+    def getBasicInfo(self):
+        return [self.__name,self.__jobTitle, self.__location]
+    
+    #return list of strings representing college accomplishments
+    def getEduInfo(self):
+        return [self.__collegeName, self.__degreeName, self.__collegeStart, self.__collegeEnd]
+    
+    #return list of previous jobs, including all their attributes
+    def getPrevJobs(self):
+        jobArray = []
 
+        for i in self.__prevJobs:
+            jobArray.append(i.ReturnAllJobData())
+        return jobArray
+    
+    
     def PrintAllJobs(self):
         for i in self.__prevJobs:
             print(i.ReturnAllJobData())
