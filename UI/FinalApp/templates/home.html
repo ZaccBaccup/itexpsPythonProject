@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAT Home</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #212226;
+            color: white;
+        }
+
+        .navbar {
+            background: #212226;
+            border-bottom: 1px solid #343a40;
+        }
+
+        .hero {
+            padding: 40px 20px 20px;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-weight: bold;
+        }
+
+        .section {
+            padding: 30px 20px;
+        }
+
+        .feature-card {
+            background: #2f3338;
+            border-radius: 10px;
+            padding: 25px;
+            transition: 0.3s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .feature-card:hover {
+            background: #343a40;
+            transform: translateY(-5px);
+        }
+
+        .stats-box {
+            background: #2f3338;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .text-muted {
+            color: #adb5bd !important;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-dark px-4">
+    <div class="px-3 mb-4">
+        <img src="{{ url_for('static', filename='logo.png') }}" width="50">
+        <img src="{{ url_for('static', filename='group1.png') }}" width="150">
+    </div>
+    <a href="{{ url_for('logout') }}" class="btn btn-outline-light">Logout</a>
+</nav>
+
+<!-- Welcome Section -->
+<div class="hero">
+    <h2>Welcome back{{ ' ' + user_name if user_name else '' }}! 👋</h2>
+    <p class="text-muted">Here’s what you can work on today.</p>
+</div>
+
+<!-- Stats -->
+<div class="container section">
+    <div class="row text-center g-3">
+        <div class="col-md-4">
+            <div class="stats-box">
+                <h3>{{ active_apps or 0 }}</h3>
+                <p class="text-muted mb-0">Active Applications</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="stats-box">
+                <h3>{{ interviews_sched or 0 }}</h3>
+                <p class="text-muted mb-0">Interviews Scheduled</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="stats-box">
+                <h3>{{ offers or 0 }}</h3>
+                <p class="text-muted mb-0">Offers Received</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Action Cards -->
+<div class="container section text-center">
+    <h4 class="mb-4">Get Started</h4>
+
+    <div class="row g-4">
+
+        <div class="col-md-3 d-flex">
+            <div class="feature-card w-100">
+                <div>
+                    <h5>Dashboard</h5>
+                    <p class="text-muted">View your progress and insights.</p>
+                </div>
+                <a href="{{ url_for('dashboard') }}" class="btn btn-primary mt-3">View</a>
+            </div>
+        </div>
+
+        <div class="col-md-3 d-flex">
+            <div class="feature-card w-100">
+                <div>
+                    <h5>Job App Tracker</h5>
+                    <p class="text-muted">Track and manage your applications.</p>
+                </div>
+                <a href="{{ url_for('jobtracker') }}" class="btn btn-primary mt-3">Open</a>
+            </div>
+        </div>
+
+        <div class="col-md-3 d-flex">
+            <div class="feature-card w-100">
+                <div>
+                    <h5>Resume Builder</h5>
+                    <p class="text-muted">Create and update your resume.</p>
+                </div>
+                <a href="{{ url_for('resume') }}" class="btn btn-primary mt-3">Open</a>
+            </div>
+        </div>
+
+        <div class="col-md-3 d-flex">
+            <div class="feature-card w-100">
+                <div>
+                    <h5>Career Prep</h5>
+                    <p class="text-muted">Practice interview questions.</p>
+                </div>
+                <a href="{{ url_for('careerprep') }}" class="btn btn-primary mt-3">Start</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="text-center text-muted pb-4">
+    <small>CareerFlow © 2026</small>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

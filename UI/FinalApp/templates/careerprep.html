@@ -1,0 +1,73 @@
+{% extends "layout.html" %} <!-- template inheritance tag -->
+
+{% block content %} <!-- block tag in Jinja2 (the template engine Flask uses) -->
+<div class="mb-4">
+    <div class="d-flex justify-content-between align-items-center">
+        <h2 class="mb-0">Application & Interview Prep</h2>
+    </div>
+    <p class="lead mt-2">Create cover letters and sharpen your interview skills</p>
+</div>
+<div class="container text-center py-5 px-5" id="formx">
+    <div class="d-flex justify-content-between align-items-center">
+        <p>Upload the job description file or paste the job description in the text box below</p>
+    </div>
+    <div class="mb-4">
+        <form id="jd-form" action="{{ url_for('careerprep') }}" method="POST" enctype="multipart/form-data">
+            <div class="mb-3">
+                <input type="file" class="form-control" name="jd_file_input" accept=".txt">
+            </div>
+            <div class="mb-3">
+                <textarea name="jd_text_input" class="form-control" rows="5"
+                    placeholder="Or enter details here..."></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit" name="action" value="cover_letter" onclick="document.getElementById('lloader').style.display='block'">
+                Generate Cover Letter
+            </button>
+            <button class="btn btn-primary" type="submit" name="action" value="interview_questions" onclick="document.getElementById('qloader').style.display='block'">
+                Generate Interview Questions
+            </button>
+        </form>
+    </div>
+
+    <!-- Display message while waiting for response back from AI -->
+    <div id="lloader" style="display:none;">
+        Generating cover letter...
+    </div>
+
+    <div id="qloader" style="display:none;">
+        Generating practice interview questions...
+    </div>
+
+    <!-- Display cover letter here -->
+    {% if cover_letter %}
+    <div class="mt-4 text-start">
+        <h4>Cover Letter:</h4>
+        <div class="question-box p-3">
+            <pre style="white-space: pre-wrap;">{{ cover_letter }}</pre>
+        </div>
+    </div>
+    {% endif %}
+
+    <!-- Display questions here -->
+    {% if questions %}
+    <div class="mt-4 text-start">
+        <h4>Practice Interview Questions:</h4>
+        <div class="question-box p-3">
+            <pre style="white-space: pre-wrap;">{{ questions }}</pre>
+        </div>
+    </div>
+    {% endif %}
+
+</div>
+
+<!--
+<script>
+function showQuestionsLoader() {
+    document.getElementById("qloader").style.display = "block";
+}
+function showLetterLoader() {
+    document.getElementById("lloader").style.display = "block";
+}
+</script>
+-->
+{% endblock %}

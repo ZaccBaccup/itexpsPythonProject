@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAT CareerBuilder App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            min-height: 100vh;
+            background-color: #f4f7f6;
+            margin: 0;
+        }
+        #sidebar {
+            width: 250px;
+            background: #212226;
+            color: white;
+            padding-top: 20px;
+            position: fixed;
+            height: 100vh;
+        }
+        #main-content {
+            margin-left: 250px; /* This matches the sidebar width */
+            flex-grow: 1;
+            padding: 40px;
+            background: #212226;
+            color: white;
+        }
+        #formx {
+            background-color: #212226;
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.2) !important; /* !important overrides bootstrap css */
+            border-radius: 10px;
+            box-shadow: none;
+        }
+        table {
+            background: #212226;
+            color: white;
+            border-collapse: separate !important;
+            border-spacing: 3px;
+        }
+        textarea.form-control {
+            background-color: #212226 !important;
+            color: white !important;
+            border: 1px solid #555 !important;
+            opacity: 0.9;  /* makes it slightly softer */
+        }
+        textarea.form-control::placeholder {
+            color: white;
+            opacity: 0.9;
+        }
+        input[type="file"] {
+            background-color: #2f3338;
+            color: white;
+            opacity: 0.9;
+            border: 1px solid #555;
+            padding: 6px;
+        }
+        tr:hover {
+            background-color: #2f3338;
+        }
+        .role {
+            width: 130px;
+        }
+        .nav-link {
+            color: #adb5bd;
+            padding: 15px 20px;
+        }
+        .nav-link:hover {
+            color: white;
+            background: #343a40;
+        }
+        .nav-link.active {
+            background: #0d6efd;
+            color: white;
+        }
+        .chart-img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+        }
+        .applied {
+            background: #3B82F6 !important;
+        }
+        .interview_scheduled {
+            background: #F59E0B !important;
+        }
+        .offer_received {
+            background: #10B981 !important;
+        }
+        .withdrawn {
+            background: #6B7280 !important;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="sidebar">
+        <div class="px-3 mb-4">
+            <img src="{{ url_for('static', filename='logo.png') }}" width="50">
+            <img src="{{ url_for('static', filename='group1.png') }}" width="150"><br><br>
+            <h3>PAT CareerFlow</h3>
+        </div>
+        <nav class="nav flex-column">
+            <!-- using url_for function so Flask will look for the name of the Python function in app.py -->
+            <a class="nav-link" href="{{ url_for('dashboard') }}">Dashboard</a>
+            <a class="nav-link" href="{{ url_for('jobtracker') }}">Job App Tracker</a>
+            <a class="nav-link" href="{{ url_for('resume') }}">Resume Builder</a>
+            <a class="nav-link" href="{{ url_for('careerprep') }}">Career Prep</a>
+            <a class="nav-link" href="{{ url_for('logout') }}">Logout</a>
+        </nav>
+    </div>
+
+    <div id="main-content">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+{% extends "layout.html" %} <!-- template inheritance tag -->
+
+{% block content %} <!-- block tag in Jinja2 (the template engine Flask uses) -->
+
+<div class="mb-4">
+    <div class="d-flex justify-content-between align-items-center">
+        <h2 class="mb-0">ResumeBuilder Pro</h2>
+    </div>
+    <p class="lead mt-2">Create your professional resume in seconds!</p>
+</div>
+
+<div class="container py-5 px-5" id="formx">
+
+    <p class="mb-4">Upload a file or paste contents in the sections below</p>
+
+    <form action="{{ url_for('resume') }}" method="POST" enctype="multipart/form-data" target="_blank">
+
+        <div class="row g-4">
+
+            <!-- LEFT COLUMN -->
+            <div class="col-md-6">
+                <div class="p-3">
+                    <h5>Your Skills and Experiences</h5>
+                    <div class="mb-3">
+                        <input class="form-control" type="file" name="exp_file" accept=".txt,.csv">
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" name="exp_text" rows="6" placeholder="Or enter details here..."></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT COLUMN -->
+            <div class="col-md-6">
+                <div class="p-3">
+                    <h5>Job Description</h5>
+                    <div class="mb-3">
+                        <input class="form-control" type="file" name="jd_file" accept=".txt,.csv">
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" name="jd_text" rows="6"
+                            placeholder="Or enter details here..."></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <input type="submit" class="btn btn-primary" value="Generate Resume">
+    </form>
+
+</div>
+
+{% endblock %}

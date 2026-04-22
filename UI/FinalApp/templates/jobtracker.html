@@ -1,0 +1,70 @@
+{% extends "layout.html" %} <!-- template inheritance tag -->
+
+{% block content %} <!-- block tag in Jinja2 (the template engine Flask uses) -->
+<div class="mb-4">
+    <div class="d-flex justify-content-between align-items-center">
+        <h2 class="mb-0">Job Application Tracker</h2>
+        <a href="{{ url_for('jobappadd') }}">
+            <button class="btn btn-primary">+ Add New Application</button>
+        </a>
+    </div>
+    <p class="lead mt-2">Manage applications and stay on top of follow-ups</p>
+</div>
+
+<div class="card shadow-sm" id="formx">
+    <div class="card-body">
+        <form method="GET" action="{{ url_for('jobtracker') }}" class="mb-3">
+            <div class="input-group">
+                <input type="text" name="q" class="form-control" placeholder="Search company, role, or status..." value="{{ query }}">&nbsp;&nbsp;
+                <button class="btn btn-primary" type="submit">Search</button>
+                <a href="{{ url_for('jobtracker') }}" class="btn btn-secondary ms-2">Clear</a>
+            </div>
+        </form>
+        <table width="100%">
+            <thead>
+                <tr>
+                    <th>Company</th>
+                    <th>Role</th>
+                    <th>Date Applied</th>
+                    <th>Contact Name</th>
+                    <th>Contact Email</th>
+                    <th>Job Link</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for job in jobs %}
+                <tr data-id="{{ job.id }}" onclick="window.location='/jobappedit/{{ job.id }}'" style="cursor:pointer;" class="{% if job.needs_followup %}bg-danger{% endif %}" title="{% if job.needs_followup %}You applied over 7 days ago. Please follow up.{% endif %} Click to edit.">
+                    <td class="company">{{ job.company }}</td>
+                    <td class="role">{{ job.role }}</td>
+                    <td class="date">{{ job.date }}</td>
+                    <td class="cname">{{ job.cname }}</td>
+                    <td class="cemail">{{ job.cemail }}</td>
+                    <td class="joblink">{{ job.joblink }}</td>
+                    <td class="status">
+                        <span class="badge rounded-pill
+                            {% if job.status == 'Interviewed' %}bg-warning text-dark
+                            {% elif job.status == 'Interview Scheduled' %}interview_scheduled text-dark
+                            {% elif job.status == 'Offer Received' %}offer_received text-dark
+                            {% elif job.status == 'Rejected' %}bg-danger
+                            {% elif job.status == 'Withdrawn' %}withdrawn
+                            {% else %}applied text-dark
+                            {% endif %}">
+                            {{ job.status }}
+                        </span>
+                    </td>
+                </tr>
+                {% endfor %}
+                <!-- Display if no records found -->
+                {% if jobs|length == 0 %}
+                <tr>
+                    <td colspan="7" class="text-center text-muted">
+                        <font color="red"><b>No results found</b></font>
+                    </td>
+                </tr>
+                {% endif %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}
